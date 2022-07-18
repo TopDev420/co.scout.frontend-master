@@ -1,0 +1,415 @@
+.scoutStreetView
+    height: 100%
+    width: 100%
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 100000
+.DrawerContainer
+    height: 100%
+    width: 100%
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 500
+    background: #0000008c
+.scoutPopupContainer
+    height: 100%
+.Drawer
+    position: fixed
+    height: 100%
+    width: 286px
+    background: #FFFFFF
+    box-shadow: 0px 4px 18px -6px rgba(17, 17, 17, 0.1), 0px 12px 42px -4px rgba(24, 39, 75, 0.12)
+    top: 0
+    display: block
+    transition: .3s
+    padding: 14px
+    z-index: 501
+
+    p
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 24px
+        color: #111111
+
+.scoutDrawerMenuWrapper
+    margin-top: 32px
+
+.scoutDrawerMenu
+    margin: 16px 0px
+    cursor: pointer
+    height: 44px
+    padding: 8px
+
+    div
+        img
+            height: 30px
+            width: 30px
+
+.scoutDrawerMenu:hover
+    background: #d5d5d52a
+    border-radius: 8px
+
+.scoutDrawerMenuProfile
+    height: 36px
+    width: 36px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #3E3E3E
+    img
+        width: 30px
+        height: 30px
+
+.drawerLogo
+    display: flex
+    justify-content: center
+    margin-top: 32px
+    width: 100%
+    height: fit-content
+    img
+        width: 140px
+
+.DrawerOpened
+    left: 0
+
+.DrawerClosed
+    left: -4000px
+
+.scoutDrawerLogout
+    display: flex
+    width: 100%
+    margin: auto
+    left: 0
+    position: absolute
+    bottom: 20px
+    justify-content: flex-start
+    div
+        display: flex
+        width: 140px
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        p
+            margin-left: 10px
+            font-family: Inter
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            color: #828282
+
+.scoutMapSelectorWrapper
+    cursor: default
+    position: absolute
+    background: #FFFFFF
+    box-shadow: 0px 4px 18px rgba(17, 17, 17, 0.1), 0px 12px 42px rgba(24, 39, 75, 0.12)
+    border-radius: 8px
+    width: 216px
+    height: 140px
+    right: 0
+    bottom: 0px
+    padding: 12px
+    transition: .3s
+.scoutMapSelectorWrapperInactive
+    transform: scale(0)
+    right: -100px
+    bottom: -40px
+.scoutMapSelectorWrapperActive
+    transform: scale(1)
+    right: 0
+    bottom: 0
+
+    div
+        div
+            p
+                font-family: Inter
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 24px
+                color: #111111
+            img
+                cursor: pointer
+    .scoutMapTypeList
+        margin-top: 16px
+
+.scoutMapTypeText
+    font-family: Inter
+    font-style: normal
+    font-weight: normal
+    font-size: 12px !important
+    line-height: 22px
+    text-align: center
+    color: #111111
+    width: 56px !important
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.scoutMapTypeInactive
+    opacity: 1
+    border: 1px solid #D5D5D5
+    box-sizing: border-box
+    border-radius: 8px
+    width: 56px
+    height: 56px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+
+.scoutMapTypeActive
+    background: #D5D5D5
+    opacity: 1
+    border-radius: 8px
+    width: 56px
+    height: 56px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+
+.scoutDrawerMenuText
+    margin-left: 8px
+
+.scoutLatLongBox
+    background: #FFFFFF
+    box-shadow: 0px 4px 18px -6px rgba(17, 17, 17, 0.1), 0px 12px 42px -4px rgba(24, 39, 75, 0.12)
+    border-radius: 4px
+    position: fixed
+    bottom: 24px
+    left: 16px
+    padding: 12px
+    justify-content: center
+    align-items: center
+    display: flex
+    p
+        font-family: Inter
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 24px
+
+.scoutPopupExpanded
+    height: 70% !important
+    img
+        transform: rotate(180deg) !important
+
+.scoutPopupMinimized
+    height: 280px !important
+    overflow-y: hidden
+    img
+        transform: rotate(0deg) !important
+
+.scoutPopupMetaExpanded
+    // height: 100% !important
+    // overflow: hidden
+
+.scoutPopupMetaMinimize
+    height: 0px !important
+
+.scoutPopupScroll
+    // display: grid
+    // grid-template-rows: 180px 20px 1fr
+    // height: calc( 100% - 80px)
+    // overflow: hidden
+
+.scoutPopupDesktopBodyWrapper
+    height: calc( 100% - 80px)
+    display: grid
+    grid-template-rows: 80x 240px 1fr
+
+.scoutPopupDesktopMeta
+    height: 100%
+    overflow: auto
+.scoutPopupMobileWrapper
+    height: 90% !important
+    width: 100% !important
+    position: relative !important
+    width: 100% !important
+    max-width: 100% !important
+    top: inherit !important
+    left: inherit !important
+    background: transparent !important
+    box-shadow: none !important
+    display: grid !important
+    white-space: nowrap
+    // overflow: scroll
+    // -webkit-overflow-scrolling: touch
+    border-radius: 20px
+
+.scoutPopup, .scoutPopupMobileWrapper
+    background: #FFFFFF
+    box-shadow: 0px 4px 18px -6px rgba(17, 17, 17, 0.1), 0px 8px 42px -4px rgba(24, 39, 75, 0.12)
+    border-radius: 8px
+    width: 360px
+    max-width: 95%
+    position: fixed
+    left: 16px
+    top: 112px
+    transition: .3s
+    .scoutPopupDivider
+        background: #D5D5D5
+        width: 100%
+        height: 1px
+        margin: 16px 0px
+
+    .scoutPopupHeader
+        position: static
+        padding: 0px 24px
+        display: flex
+        justify-content: space-between
+        margin: 24px 0px
+        align-items: center
+        h1
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 24px
+            color: #000000
+        img
+            transition: .3s
+            cursor: pointer
+            transform: rotate(180deg)
+
+    .scoutBodyMeta
+        transition: .3s
+        // overflow: scroll
+.scoutPopupBody
+    padding: 0px 24px
+    div
+        margin: 8px 0px
+        h2
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            text-align: left
+        p
+            font-family: Inter
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            text-align: left
+
+.scoutBodyMeta
+    padding: 0px 24px
+    div
+        margin: 8px 0px
+        h2
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            text-align: left
+        p
+            font-family: Inter
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            color: #000000
+            text-align: left
+
+.scoutPopupMobileDragger
+    width: 100%
+    display: flex
+    justify-content: center
+    border-top-right-radius: 16px
+    border-top-left-radius: 16px
+    position: fixed
+    background-color: #fff !important
+    z-index: 200 !important
+    .scoutPopupMobileDragBar
+        background: #D5D5D5
+        border-radius: 4px !important
+        margin: 16px auto
+        width: 100px
+        height: 4px
+    .scoutPopupCloseMobile
+        background: #ebebeb
+        height: 30px
+        width: 30px
+        position: fixed
+        display: flex
+        justify-content: center
+        align-items: center
+        right: 8px
+        top: 8px
+        border-radius: 50%
+
+        img
+            transform: rotate(180deg)
+.ReactSwipeableBottomSheet--open
+    border-top-right-radius: 16px
+    border-top-left-radius: 16px
+.streetViewCloseButton
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    position: fixed
+    z-index: 10000
+    right: 10px
+    top: 10px
+    background-color: #222
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+.streetViewCloseButton:hover
+    opacity: .7
+.scoutPopupMobile
+    display: none
+    height: 100%
+    z-index: 7
+    // border-top-right-radius: 16px
+    // border-top-left-radius: 16px
+    div
+        // border-top-right-radius: 16px
+        // border-top-left-radius: 16px
+        z-index: 7
+        div
+            z-index: 7
+            div:nth-child(2)
+                z-index: 6
+            div
+                border-top-right-radius: 16px
+                border-top-left-radius: 16px
+
+@media only screen and (max-width: 576px)
+    .scoutPopupMobileDragger
+        display: block
+    .scoutPopupMobile
+        display: block
+        // overflow: hidden !important
+    .scoutPopupMobileWrapper
+        // overflow: hidden !important
+    .Drawer
+        display: block
+    .scoutPopup
+        display: none
+        left: 0
+        max-width: 100%
+        width: 100%
+        bottom: -(100px)
+        top: inherit
+        z-index: 20
+    .scoutBodyMeta
+        // overflow: hidden !important
+    .scoutPopupScroll
+        // display: grid
+        // grid-template-rows: 180px 30px 1fr
+        // height: 100% !important
+        // overflow: hidden
+    .scoutPopupHeader
+        display: none !important

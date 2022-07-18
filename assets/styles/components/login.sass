@@ -1,0 +1,181 @@
+.scoutCoverContainer
+    background-color: #111111
+    height: 100%
+    text-align: center
+    transition: .3s
+
+.scoutRightColMeta
+    display: flex
+    align-items: center
+    overflow: auto
+    .scoutMobileImage
+        display: none
+        position: fixed
+        top: 0
+.scoutRightCol
+    padding: 0 24px
+    position: relative
+    overflow: auto
+
+
+    .scoutMobileImage
+        display: none
+        position: fixed
+        top: 0
+.scoutHomeActionGroup
+    z-index: 1
+    // display: flex
+    // flex-direction: column
+    // justify-content: space-evenly
+    // min-height: 500px
+    // height: 100%
+    width: 100%
+    margin: 0 auto
+    padding: 60px 0px
+
+.scoutWelcomText
+    color: #FFFFFF
+    font-family: Inter
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+
+.scoutAuthGroup
+    margin-top: 10%
+
+.scoutAuthForm
+    margin-top: 64px
+    width: 328px
+    max-width: 90%
+    margin-left: auto
+    margin-right: auto
+
+.scoutGettingStarted
+    font-family: Inter
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 24px
+    color: #FFFFFF
+
+.scoutHomeFooter
+    font-family: Inter
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    margin-top: 115px
+    color: #FFFFFF
+
+    span
+        font-family: Inter
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 16px
+        color: #FFFFFF
+        cursor: pointer
+
+.scoutAuthOr
+    margin-top: 30px
+    font-family: Inter
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 24px
+    text-align: center
+    color: #FFFFFF
+    opacity: 0.6
+    margin-bottom: 16px
+
+.scoutAuthTerms, .scoutAuthMeta
+    font-family: Inter
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    color: #FFFFFF
+    opacity: 0.6
+    text-align: center
+    width: 328px
+    max-width: 95%
+    margin: auto
+    margin-top: 8px
+
+.scoutAuthMeta
+    cursor: pointer
+
+.scoutAuthAction
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 16px
+    margin-bottom: 16px
+    padding-bottom: 20px
+    button
+        cursor: pointer
+        height: 100%
+        width: 100%
+        border: none
+        outline: none
+        background: #2751E9
+        border-radius: 40px
+        width: 240px
+        max-width: 98%
+        height: 42px
+        p
+            font-family: Inter
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            color: #FFFFFF
+
+@media only screen and (max-width: 768px)
+    .scoutRightCol
+        padding: 0px 0px
+        background-color: transparent
+        .scoutHomeActionGroup
+            position: absolute
+            z-index: 2
+            width: 100%
+            height: 100%
+            top: 0
+            padding: 20px 0px
+        .scoutMobileImage
+            display: flex
+            z-index: 1
+        .scoutAuthGroup
+            margin-top: 60px
+        .scoutHomeWelcomeWrapper
+            margin-top: 40px
+        .scoutHomeFooter
+            margin-bottom: 40px
+
+    .scoutHomeLeftBanner
+        display: none
+        max-width: 0%
+
+@media  only screen and ( max-width:  586px)
+    .scoutWelcomText
+        color: #111
+    .scoutCoverContainer
+        background: #fff
+    .scoutMobileImage
+        display: none !important
+    .scoutHomeWelcomeWrapper
+        img
+            display: none !important
+    .scoutAuthOr
+        color: #3E3E3E !important
+        opacity: 1 !important
+    .scoutAuthTerms, .scoutAuthMeta, .scoutAuthMeta > a
+        color: #828282 !important
+        opacity: 1 !important
+
+@media only screen and (max-height: 700px)
+    .scoutRightColMeta
+        display: block !important

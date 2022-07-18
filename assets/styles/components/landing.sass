@@ -1,0 +1,837 @@
+
+.scoutLandingNav
+    height: 72px
+    width: 100%
+    background: #111
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 100
+    .scoutLandingNavContainer
+        max-width: 1200px
+        padding: 0 16px
+        margin: 0 auto
+        height: 100%
+        position: relative
+        .scoutLandingDrawerWrapper
+            visibility: hidden
+        .scoutLandingDrawerWrapperActive
+            position: fixed
+            left: 0
+            top: 0
+            background: #111111bd
+            height: 100%
+            width: 100%
+            visibility: visible
+
+        .scoutLandingDrawer
+            height: 100%
+            width: 80%
+            border-top-right-radius: 16px
+            border-bottom-right-radius: 16px
+            background: #FFFFFF
+            position: absolute
+            left: -600px
+            transition: .3s
+        .scoutLandingDrawerActive
+            height: 100%
+            width: 80%
+            border-top-right-radius: 16px
+            border-bottom-right-radius: 16px
+            background: #FFFFFF
+            position: absolute
+            left: 0
+            transition: .3s
+            padding: 26px 24px
+            .scoutLandingDrawerHead
+                display: flex
+                align-items: center
+                .scoutLandingMenu
+                    cursor: pointer
+                .scoutLogo
+                    margin-left: 12px
+            .scoutLandingDrawerMenuItems
+                margin-top: 86px
+
+                p
+                    font-weight: bold
+                    font-size: 32px
+                    line-height: 40px
+                    font-family: 'Space Grotesk'
+                    color: #111111
+                    margin-bottom: 16px
+                    cursor: pointer
+
+        div
+            .scoutLandingNavLeftCol
+                display: flex
+                align-items: center
+                .scoutLandingMenu
+                    display: none
+                    margin-right: 12px
+                    cursor: pointer
+                ul
+                    margin-left: 32px
+                    list-style-type: none
+                li
+                    margin-left: 40px
+                    float: left
+                    a
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 20px
+                        display: block
+                        transition: .3s
+                    a:hover
+                        opacity: .5
+            .scoutLandingNavRightCol
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                button
+                    border: none
+                    width: 85px
+                    height: 40px
+                    outline: none
+                    background: #FFFFFF
+                    border-radius: 8px
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    color: #111111
+                    cursor: pointer
+
+.scoutHeroWrapper
+    position: relative
+    background: #111111
+    height: 700px
+    margin-top: 72px
+    .scountIndexSVGContainer
+        position: absolute
+        bottom: 0
+        width: 100%
+        height: 10vw
+        svg
+            position: absolute
+            bottom: 0
+            width: 100%
+            height: 10vw
+            fill: #111111
+        .scoutIndexLeftBlue
+            position: absolute
+            bottom: -6.8px
+            z-index: 1
+            transform: rotate(1.5deg) !important
+        .scoutIndexLeftGrey
+            position: absolute
+            bottom: -87.1px
+            z-index: 1
+            left: -5px
+            transform: rotate(1.5deg) !important
+        .scoutIndexRightGrey
+            position: absolute
+            top: -71.1px
+            z-index: 1
+            right: 0
+            transform: rotate(1.45deg) !important
+        .scoutIndexRightBlue
+            position: absolute
+            top: -33.6px
+            z-index: 1
+            right: -5px
+            transform: rotate(1.5deg) !important
+        .scoutIndexRightWhite
+            position: absolute
+            top: -128.6px
+            z-index: 1
+            right: 30px
+            transform: rotate(1.5deg) !important
+    .scoutHeroContainer
+        max-width: 1200px
+        margin: 0 auto
+        height: 100%
+        padding: 16px
+        .scoutHeroRow
+            align-items: flex-start !important
+        .scoutHeroLeftCol
+            h1
+                font-size: 72px
+                line-height: 98px
+                color: #FFFFFF
+                margin-top: 168px
+                font-family: "Space Grotesk"
+                font-weight: 700
+            button
+                background: #FFFFFF
+                border-radius: 8px
+                width: 196px
+                height: 62px
+                margin-top: 32px
+                font-size: 20px
+                line-height: 30px
+                cursor: pointer
+                border: none
+                transition: .1s
+            button:hover
+                transform: scale(1.05)
+        .scoutHeroRightCol
+            position: relative
+            img
+                position: absolute
+                top: 72px
+                right: 0
+                max-width: 98%
+                max-height: 100%
+        .scoutHeroBanner
+            div
+                display: flex
+                flex-direction: column
+                align-items: center
+                height: 100%
+                justify-content: center
+                h1
+                    font-size: 92px
+                    line-height: 98px
+                    color: #FFFFFF
+                    font-family: "Space Grotesk"
+                    font-weight: 700
+                p
+                    font-size: 32px
+                    line-height: 38px
+                    color: #FFFFFF
+                    margin-top: 16px
+                    font-family: "Space Grotesk"
+                    font-weight: 700
+
+.scoutParcelsMadeEasyWrapper
+    max-width: 1200px
+    margin: 0 auto
+    padding: 16px
+    margin-top: 108px
+
+    .scoutMapImagesContainer
+        position: relative
+        height: 800px
+        .scoutMapImageOne
+            position: absolute
+            z-index: 1
+        .scoutMapImageTwo
+            position: absolute
+            left: 224px
+            top: 374px
+            z-index: 1
+
+    .scoutParcelMadeEasyRight
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+        h1
+            font-family: "Space Grotesk"
+            font-weight: bold
+            font-size: 40px
+            line-height: 54px
+            color: #18191F
+        p
+            font-family: "Inter"
+            font-size: 18px
+            line-height: 32px
+            color: #18191F
+            margin-top: 16px
+            margin-bottom: 40px
+    .scoutParcelMadeEasyImageContainer
+        align-items: center
+        display: flex
+        justify-content: center
+        margin-right: 8px
+    .scoutParcelMadeEasyHead
+        font-size: 20px !important
+        line-height: 30px !important
+        color: #18191F !important
+
+    .scoutParcelMadeEasyDesc
+        font-size: 16px !important
+        line-height: 26px !important
+        color: #18191F !important
+        margin-bottom: 0 !important
+        margin-top: 0 !important
+
+    .scoutParcelsMadeEasyCTA
+        background: #111111
+        border-radius: 8px
+        width: 101px
+        height: 40px
+        margin-top: 40px
+        font-weight: 500
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        border: none
+        cursor: pointer
+
+    .stayOrganizedText
+        font-size: 40px
+        line-height: 54px
+        color: #18191F
+        text-align: center
+        font-family: "Space Grotesk"
+
+.searchForAnythingWrapper
+    height: 668px
+    background: #111
+    width: 100%
+    margin-top: 54px
+
+    .searchForAnythingContainer
+        max-width: 1200px
+        margin: 0 auto
+        padding: 16px
+        height: 100%
+
+        div
+            .scoutSearchForAnythingLeftCol
+                display: flex
+                flex-direction: column
+                justify-content: center
+                padding-right: 108px
+
+                h1
+                    font-family: Space Grotesk
+                    font-size: 40px
+                    line-height: 54px
+                    color: #FFFFFF
+
+                p
+                    font-size: 18px
+                    line-height: 32px
+                    margin-top: 32px
+                    color: #FFFFFF
+                button
+                    margin-top: 32px
+                    display: flex
+                    justify-content: flex-start
+                    padding: 0
+                    align-items: center
+                    background: transparent
+                    height: 30px
+                    width: 181px
+                    border: none
+                    cursor: pointer
+                    p
+                        font-size: 20px !important
+                        margin: 0 !important
+                        line-height: 30px !important
+                        color: #FFFFFF
+                    img
+                        margin-left: 8px
+
+            .scoutSearchForAnythingRightCol
+                display: flex
+                flex-direction: column
+                justify-content: center
+                .searchForAnythingWhiteBackground
+                    display: flex
+                    justify-content: center
+                    background: #FFFFFF
+                    border-radius: 8px
+                    height: 540px
+                    width: 540x
+                    position: relative
+                    img
+                        position: absolute
+                        bottom: 0
+
+.stayOrganizedWrapper
+    height: 668px
+    background: #fff
+    width: 100%
+    margin-top: 54px
+
+    .stayOrganizedContainer
+        max-width: 1200px
+        margin: 0 auto
+        padding: 16px
+        height: 100%
+
+        div
+            .scoutstayOrganizedLeftCol
+                display: flex
+                flex-direction: column
+                justify-content: center
+                padding-left: 78px
+
+                h1
+                    font-family: Space Grotesk
+                    font-size: 40px
+                    line-height: 54px
+                    color: #000
+
+                p
+                    font-size: 18px
+                    line-height: 32px
+                    margin-top: 32px
+                    color: #000
+                button
+                    margin-top: 32px
+                    display: flex
+                    justify-content: flex-start
+                    padding: 0
+                    align-items: center
+                    background: transparent
+                    height: 30px
+                    width: 181px
+                    border: none
+                    cursor: pointer
+                    p
+                        font-size: 20px !important
+                        margin: 0 !important
+                        line-height: 30px !important
+                        color: #000
+                    img
+                        margin-left: 8px
+
+            .scoutstayOrganizedRightCol
+                display: flex
+                flex-direction: column
+                justify-content: center
+                .stayOrganizedWhiteBackground
+                    display: flex
+                    justify-content: center
+                    background: #d5d5d570
+                    border-radius: 8px
+                    height: 540px
+                    width: 540x
+                    position: relative
+
+                    img
+                        position: absolute
+                        bottom: 0
+                        margin-top: 61px
+
+.scoutPricingWrapper
+    max-width: 1200px
+    margin: 0 auto
+    padding: 16px
+    margin-top: 64px
+    .scoutPricingHead
+        display: flex
+        justify-content: center
+        h1
+            text-align: center
+            font-family: "Space Grotesk"
+            font-style: normal
+            font-weight: bold
+            font-size: 48px
+            line-height: 64px
+    .scoutPricingRow
+        margin-top: 48px
+        .scoutPricingColLeft
+            display: flex
+            justify-content: flex-start !important
+            .scoutPriceCardBlack
+                background-color: #111
+                height: 346px
+                width: 95%
+                max-width: 95%
+                border-radius: 8px
+                padding: 32px
+                position: relative
+                .scoutPriceCardHead
+                    p
+                        font-family: "Space Grotesk"
+                        font-size: 56px
+                        line-height: 64px
+                        font-weight: 600
+                        color: #FFFFFF
+                .scoutPriceCardBody
+                    margin-top: 32px
+                    .scoutPriceBodyTitle
+                        font-weight: 600
+                        font-size: 24px
+                        line-height: 32px
+                        color: #FFFFFF
+
+                    .scoutPriceBodyDesc
+                        font-size: 16px
+                        line-height: 26px
+                        color: #FFFFFF
+                        margin-top: 16px
+                .scoutPriceCardFooter
+                    position: absolute
+                    bottom: 32px
+                    button
+                        background: transparent
+                        background-color: transparent
+                        border: none
+                        cursor: pointer
+                        height: 20px
+                        padding: 0 !important
+                        div
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            p
+                                font-weight: bold
+                                font-size: 12px
+                                line-height: 16px
+                                color: #fff
+                            img
+                                margin-left: 6.67px
+
+        .scoutPricingColRight
+            display: flex
+            justify-content: flex-end !important
+            .scoutPriceCardBlue
+                background-color: #2751E9
+                height: 346px
+                width: 95%
+                max-width: 95%
+                border-radius: 8px
+                position: relative
+                padding: 32px
+
+                .scoutPriceCardHead
+                    p
+                        font-family: "Space Grotesk"
+                        font-size: 56px
+                        line-height: 64px
+                        font-weight: 600
+                        color: #FFFFFF
+                .scoutPriceCardBody
+                    margin-top: 32px
+                    .scoutPriceBodyTitle
+                        font-weight: 600
+                        font-size: 24px
+                        line-height: 32px
+                        color: #FFFFFF
+
+                    .scoutPriceBodyDesc
+                        font-size: 16px
+                        line-height: 26px
+                        color: #FFFFFF
+                        margin-top: 16px
+                .scoutPriceCardFooter
+                    position: absolute
+                    bottom: 32px
+                    button
+                        background: transparent
+                        background-color: transparent
+                        border: none
+                        cursor: pointer
+                        height: 20px
+                        padding: 0 !important
+                        div
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            p
+                                font-weight: bold
+                                font-size: 12px
+                                line-height: 16px
+                                color: #fff
+                            img
+                                margin-left: 6.67px
+.scoutDesktop
+    width: 100%
+    height: 754px
+    background-color: #111
+    margin-top: 32px
+    .scoutDesktopWrapper
+        max-width: 1200px
+        margin: 0 auto
+        padding: 16px
+        margin-top: 64px
+        position: relative
+        height: 100%
+        position: relative
+        .scoutDesktopText
+            margin-top: 48px
+            width: 50%
+            .scoutDesktopHead
+                font-family: "Space Grotesk"
+                font-style: normal
+                font-weight: bold
+                font-size: 48px
+                line-height: 64px
+                color: #FFFFFF
+        .scoutDesktopCTA
+            background-color: transparent
+            border: none
+            padding: 0 !important
+            margin-top: 27px
+            cursor: pointer
+            div
+                display: flex
+                p
+                    font-weight: 500
+                    font-size: 20px
+                    line-height: 30px
+                    color: #FFFFFF
+                img
+                    margin-left: 8px
+
+        .scoutDesktopUI
+            position: absolute
+            bottom: 0
+            width: 100%
+            display: flex
+            justify-content: center
+            left: 0
+            max-width: 100%
+            margin-top: 32px
+            img
+                max-width: 99%
+                width: 96%
+                position: absolute
+                bottom: 0
+
+.createAccountWrapper
+    max-width: 1200px
+    margin: 0 auto
+    padding: 16px
+    margin-top: 104px
+    .createAccountHead
+        width: 730px
+        max-width: 100%
+        margin: 0 auto
+        p
+            text-align: center
+            font-family: "Space Grotesk"
+            font-weight: bold
+            font-size: 48px
+            line-height: 64px
+            color: #111111
+    .createAccountCTA
+        width: 100%
+        display: flex
+        justify-content: center
+    button
+        cursor: pointer
+        background-color: #2751E9
+        border-radius: 8px
+        height: 62px
+        width: 240px
+        border: none
+        margin-top: 40px
+        font-weight: 500
+        font-size: 20px
+        line-height: 30px
+        color: #FFFFFF
+        transition: .3s
+    button:hover
+        opacity: .8
+        transform: scale(1.05)
+
+.scoutFooter
+    background-color: #111
+    height: 280px
+    margin-top: 104px
+    .scoutFooterWrapper
+        max-width: 1200px
+        margin: 0 auto
+        padding: 56px 16px
+
+        div
+            ul
+                margin-top: 24px
+                list-style-type: none
+                display: flex
+                li
+                    margin-right: 40px
+                    float: left
+                    a
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        display: block
+                        font-size: 16px !important
+                        line-height: 26px !important
+                        color: #FFFFFF
+            div
+                margin-top: 24px
+                p
+                    font-size: 14px
+                    line-height: 24px
+                    color: #828282
+
+@media only screen and (max-width: 1100px)
+    .scoutDesktopText
+        padding: 0 !important
+@media only screen and (max-width: 1060px)
+    .scoutDesktop
+        height: 650px !important
+    .scoutDesktopText
+        width: 70% !important
+    .scoutHeroLeftCol
+        h1
+            font-size: 50px !important
+            line-height: 56px !important
+        button
+            height: 55px !important
+
+@media only screen and (max-width: 990px)
+    .scoutDesktopText
+        width: 80% !important
+    .scoutParcelMadeEasyRight
+        align-items: flex-start
+    .scoutMapImagesContainer
+        display: flex
+        justify-content: center
+
+@media only screen and (max-width: 768px)
+    .scoutLandingMenu
+        display: flex !important
+    .scoutParcelsMadeEasyWrapper
+        margin-top: 124px
+    .scoutDesktop
+        height: 630px !important
+    .scoutDesktopText
+        width: 100% !important
+    .scoutMapImagesContainer
+        display: none
+    .scoutHeroRightCol
+        padding: 2-px
+
+        display: flex
+        justify-content: center
+        img
+            position: relative !important
+    .scoutHeroLeftCol
+        padding: 20px
+        height: min-content !important
+        h1
+            margin-top: 80px !important
+    .scoutIndexRightWhite
+        right: -90px !important
+    .scoutHeroRow
+        height: 800px !important
+        overflow: hidden
+        border-bottom-color: #D5D5D5
+        border-bottom-width: 1px
+        border-bottom-style: solid
+    .scoutHeroContainer
+        padding: 0 !important
+    .scoutLandingNavLeftCol
+        ul
+            display: none !important
+    .stayOrganizedSubText
+        display: none
+    .scoutSearchForAnythingLeftCol, .scoutstayOrganizedLeftCol
+        padding-left: 0 !important
+        padding-right: 0 !important
+        order: 2
+        margin-top: 40px
+        p
+            font-size: 16px !important
+        h1
+            font-size: 32px !important
+            line-height: 40px !important
+    .scoutSearchForAnythingRightCol, .scoutstayOrganizedRightCol
+        order: 1
+        .searchForAnythingWhiteBackground, .stayOrganizedWhiteBackground
+            height: 85vw !important
+            width: 100% !important
+            img
+                max-width: 80vw
+                height: 80vw !important
+    .searchForAnythingWrapper
+        height: auto
+        padding: 64px 0
+    .stayOrganizedWrapper
+        height: auto !important
+        .stayOrganizedContainer
+            height: auto !important
+
+    .scoutPriceCardBlue, .scoutPriceCardBlack
+        height: 400px !important
+
+@media only screen and (max-width: 586px)
+    .scoutFooter
+        margin-top: 64px !important
+        height: 433px !important
+
+        .scoutFooterWrapper
+            padding-bottom: 0 !important
+            div
+                div
+                    ul
+                        display: grid !important
+                        li
+                            margin-top: 16px
+                div
+                    p
+                        margin-top: 70px !important
+    .scoutDesktop
+        height: 500px !important
+        img
+            max-width: 90% !important
+        .scoutDesktopHead
+            font-size: 32px !important
+            line-height: 40px !important
+    .scoutParcelMadeEasyRight
+        h1
+            font-size: 32px !important
+            line-height: 40px !important
+    .scoutHeroRightCol
+        height: fit-content !important
+    .scoutHeroLeftCol
+        h1
+            font-size: 32px !important
+            line-height: 40px !important
+        button
+            width: 108px !important
+            height: 40px !important
+            font-size: 14px !important
+            line-height: 20px !important
+    .scoutPricingColLeft, .scoutPricingColRight
+        padding: 0 !important
+    .scoutPricingRow
+        margin-top: 8px !important
+    .scoutPriceCardBlue, .scoutPriceCardBlack
+        width: 100% !important
+        max-width: 100% !important
+        margin-top: 24px
+        height: 360px !important
+
+    .scoutPricingHead
+        justify-content: flex-start !important
+        h1
+            font-size: 32px !important
+            line-height: 40px !important
+            text-align: left !important
+    .scoutParcelsMadeEasyWrapper
+        margin-top: 132px !important
+    .scoutParcelMadeEasyRow
+        align-items: flex-start !important
+        .scoutParcelMadeEasyImageContainer
+            margin-top: 16px !important
+
+    .createAccountWrapper
+        margin-top: 64px !important
+        .createAccountHead
+            justify-content: flex-start !important
+            p
+                text-align: left !important
+                font-size: 32px !important
+                line-height: 40px !important
+        .createAccountCTA
+            justify-content: flex-start !important
+            button
+                width: 157px !important
+                height: 40px !important
+                font-size: 14px !important
+                line-height: 20px !important
+
+@media only screen and (max-width: 460px)
+    .scoutDesktop
+        height: 450px !important
+        .scoutDesktopUI
+            img
+                height: 225px !important
+
+@media only screen and (max-width: 390px)
+    .scoutDesktop
+        height: 450px !important
+        .scoutDesktopUI
+            img
+                height: 235px !important
